@@ -1,6 +1,6 @@
 .vscode/
 *.user
-*.filter
+*.filters
 x64/
 Blot app.ee7864c6/
 .vs/
