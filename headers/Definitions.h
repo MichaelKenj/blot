@@ -12,42 +12,6 @@
 #include <iomanip>
 #include <sstream>
 
-enum class SUIT
-{
-	SIRT,
-	XACH,
-	QYAP,
-	GHAR
-};
-
-enum class CARD_TYPE
-{
-	SEVEN,
-	EIGHT,
-	NINE,
-	TEN,
-	JACK,
-	QUEEN,
-	KING,
-	ACE
-};
-
-enum class DIRECTION
-{
-	UP,
-	RIGHT,
-	DOWN,
-	LEFT
-};
-
-enum class TalkState
-{
-	XOSAL,
-	QUANSH,
-	LAVEM,
-	VZOVA,
-	SPASUMEM
-};
 
 struct TalkValue
 {
@@ -137,7 +101,3 @@ std::string identifyCardType(CARD_TYPE suit)
 		break;
 	}
 }
-
-using Board = std::vector<std::vector<wchar_t>>;
-const int BACKGROUND_WHITE = 0x00F0; // White background
-const int BACKGROUND_BLACK = 0x0000; // Black background
