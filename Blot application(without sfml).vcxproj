@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\Card\Card.cpp" />
+    <ClCompile Include="Classes\CardValue\CardValue.cpp" />
+    <ClCompile Include="Classes\Deck\Deck.cpp" />
+    <ClCompile Include="Classes\Game\Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Classes\Suit\Suit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Card\Card.h" />
+    <ClInclude Include="Classes\CardValue\CardValue.h" />
+    <ClInclude Include="Classes\Deck\Deck.h" />
+    <ClInclude Include="Classes\Game\Game.h" />
+    <ClInclude Include="headers\Includes.h" />
+    <ClInclude Include="Classes\Suit\Suit.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -104,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,17 +143,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Card.h" />
-    <ClInclude Include="Definitions.h" />
-    <ClInclude Include="Functional.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="printHelperFunctions.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
